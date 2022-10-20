@@ -1,0 +1,112 @@
+body{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(30, 38%, 92%);
+    height:100vh;
+}
+
+p{
+    font-family: Montserrat;
+    color: hsl(228, 12%, 48%);
+    font-size:14px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.img-desktop{
+    width:300px;
+}
+
+.img-mobile{
+    display:none;
+}
+
+div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+h1{
+    font-family: Fraunces;
+    font-weight: 700;
+}
+
+button{
+    margin-top: 40px;
+    font-family: Montserrat;
+    padding: 15px 70px;
+    font-weight: 700;
+    color:  hsl(0, 0%, 100%);
+    background-color:hsl(158, 36%, 37%) ;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+button:hover{
+    cursor: pointer;
+    background-color:hsl(158, 40%, 19%) ;
+}
+
+.attribution { font-size: 11px; text-align: center; flex-direction: row; display: flex;position: absolute; bottom: 0; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+@media screen and (max-width:375px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow-y: scroll;
+
+    }
+    .img-desktop{
+        width:300px;
+        display: none;
+    }
+    
+    .img-mobile{
+        display:inline-block;
+        width: 300px;
+    }
+    
+    button{
+        margin-top: 20px;
+        font-family: Montserrat;
+        padding: 15px 70px;
+        font-weight: 700;
+        color:  hsl(0, 0%, 100%);
+        background-color:hsl(158, 36%, 37%) ;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: 1000;
+    }
+
+.attribution { font-size: 11px; text-align: center; display: none;  }
+.attribution a { color: hsl(228, 45%, 44%); }
+}
